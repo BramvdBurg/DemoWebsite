@@ -95,7 +95,7 @@ startBtn.onclick = () => {
   startBtn.disabled = true;
   stopBtn.disabled = true;
 
-  startCountdown(120);
+  startCountdown(10);
 
   timer = setTimeout(() => {
     if (mediaRecorder.state === "recording") {
