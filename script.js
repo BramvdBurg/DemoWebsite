@@ -28,7 +28,7 @@ async function initCamera() {
     mediaRecorder = new MediaRecorder(stream, {
     mimeType: 'video/webm;codecs=vp9,opus',
     videoBitsPerSecond: 2_500_000,
-    audioBitsPerSecond: 128_000
+    audioBitsPerSecond: 192_000
     });
 
 
