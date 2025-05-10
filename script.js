@@ -21,7 +21,12 @@ async function initCamera() {
     console.log("Tracks:", stream.getTracks());
     console.log("Audio tracks:", stream.getAudioTracks());
 
-    mediaRecorder = new MediaRecorder(stream);
+    mediaRecorder = new MediaRecorder(stream, {
+    mimeType: 'video/webm;codecs=vp9,opus',
+    videoBitsPerSecond: 2_500_000,
+    audioBitsPerSecond: 128_000
+    });
+
 
     mediaRecorder.ondataavailable = (e) => {
       if (e.data.size > 0) {
