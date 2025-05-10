@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Record Your Video</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main>
+    <section id="recorder">
+      <h1>Feutenpraatje</h1>
+      <p>U heeft één kans om een video op te nemen. De opname eindigt automatisch na 2 minuten.</p>
+      <div class="video-wrapper">
+        <video id="preview" autoplay muted playsinline></video>
+        <div id="countdown">02:00</div>
+      </div>
+      <div class="controls">
+        <button id="startBtn">Zodra u drukt, loopt de tijd</button>
+        <button id="stopBtn" disabled>⏹ Stop Recording</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Vox Aristoteles</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
