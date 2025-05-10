@@ -13,7 +13,11 @@ async function initCamera() {
   try {
     const stream = await navigator.mediaDevices.getUserMedia({
       video: true,
-      audio: true
+      audio: {
+      echoCancellation: false,
+      noiseSuppression: false,
+      autoGainControl: false
+      }
     });
 
     preview.srcObject = stream;
