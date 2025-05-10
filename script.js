@@ -101,7 +101,7 @@ startBtn.onclick = () => {
     if (mediaRecorder.state === "recording") {
       mediaRecorder.stop();
     }
-  }, 2 * 60 * 1000); // 2 minutes
+  }, 10* 1000); // 2 minutes
 };
 
 stopBtn.style.display = "none";
